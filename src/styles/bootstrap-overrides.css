@@ -1,0 +1,27 @@
+:root {
+  --bs-primary: var(--color-primary);
+  --bs-primary-rgb: 3, 90, 164;
+  --bs-link-color-rgb: 3, 90, 164;
+  --bs-body-color: var(--color-text);
+  --bs-body-bg: #fff;
+  --bs-body-font-family: var(--font-base);
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--color-primary);
+  --bs-btn-border-color: var(--color-primary);
+  --bs-btn-hover-bg: color-mix(in srgb, var(--color-primary), black 15%);
+  --bs-btn-hover-border-color: color-mix(
+    in srgb,
+    var(--color-primary),
+    black 15%
+  );
+  --bs-btn-active-bg: color-mix(in srgb, var(--color-primary), black 25%);
+  --bs-btn-active-border-color: color-mix(
+    in srgb,
+    var(--color-primary),
+    black 25%
+  );
+  --bs-btn-disabled-bg: var(--color-primary);
+  --bs-btn-disabled-border-color: var(--color-primary);
+}

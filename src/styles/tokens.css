@@ -1,0 +1,7 @@
+:root {
+  --color-primary: #035aa4;
+  --color-bg-soft: #eff1fa;
+  --color-text: #202f45;
+
+  --font-base: "Roboto", system-ui, sans-serif;
+}
