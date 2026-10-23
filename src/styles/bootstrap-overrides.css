@@ -25,3 +25,8 @@
   --bs-btn-disabled-bg: var(--color-primary);
   --bs-btn-disabled-border-color: var(--color-primary);
 }
+
+.form-control:focus {
+  border-color: var(--color-primary);
+  box-shadow: none;
+}
