@@ -39,7 +39,7 @@ export const partsApi = createApi({
       }),
       transformResponse: withoutEmpty,
     }),
-    
+
     // Этап 2: аналоги и предложения по артикулу и бренду
     getAnalogues: builder.query({
       query: ({ number, brand }) => ({
