@@ -1,7 +1,7 @@
 function App() {
   return (
-    <div>
-      <h1 >Поиск автозапчастей</h1>
+    <div className="container py-4">
+      <h1 className="h3">Поиск автозапчастей</h1>
     </div>
   );
 }
