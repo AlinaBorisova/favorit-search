@@ -19,5 +19,10 @@ export function groupOfferRows(rows) {
     group.offers.push(row);
   }
 
-  return groups;
+  for (const group of groups) {
+    group.inStock = group.offers.some((offer) => offer.inStock);
+  }
+
+  const rank = (group) => (group.isOriginal ? 0 : group.inStock ? 1 : 2);
+  return groups.sort((a, b) => rank(a) - rank(b));
 }
