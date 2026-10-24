@@ -30,3 +30,13 @@
   border-color: var(--color-primary);
   box-shadow: none;
 }
+
+.list-group {
+  --bs-list-group-active-color: var(--color-text);
+  --bs-list-group-active-bg: var(--bs-list-group-bg);
+  --bs-list-group-active-border-color: var(--color-primary);
+}
+
+.list-group-item.active {
+  box-shadow: inset 0 0 0 1px var(--color-primary);
+}
