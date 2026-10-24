@@ -1,5 +1,5 @@
 import react from "@vitejs/plugin-react";
-import { defineConfig } from "vite";
+import { defineConfig } from "vitest/config";
 import { fileURLToPath, URL } from "node:url";
 
 // https://vite.dev/config/
@@ -9,5 +9,9 @@ export default defineConfig({
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
+  },
+  test: {
+    environment: "jsdom",
+    setupFiles: "./src/test/setup.js",
   },
 });
