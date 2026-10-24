@@ -97,4 +97,13 @@ describe("buildOfferRows", () => {
     ]);
     expect(row.warehouse).toBeNull();
   });
+
+  it("переносит дату отгрузки со склада", () => {
+    const [row] = buildOfferRows([
+      good({
+        warehouses: [warehouse({ shipmentDate: "2026-10-24T15:30:00+03:00" })],
+      }),
+    ]);
+    expect(row.shipmentDate).toBe("2026-10-24T15:30:00+03:00");
+  });
 });

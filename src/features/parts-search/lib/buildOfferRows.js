@@ -26,6 +26,7 @@ function toRows(item, isOriginal) {
     ...base,
     key: `${item.goodsID}-${w.id}`,
     warehouse: w.code ?? null,
+    shipmentDate: w.shipmentDate ?? null,
     price: w.price,
     stock: w.stock,
     inStock: true,
