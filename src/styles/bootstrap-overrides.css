@@ -24,6 +24,8 @@
   );
   --bs-btn-disabled-bg: var(--color-primary);
   --bs-btn-disabled-border-color: var(--color-primary);
+  --bs-btn-focus-shadow-rgb: 3, 90, 164;
+  --bs-btn-focus-box-shadow: 0 0 0 2px rgba(var(--bs-btn-focus-shadow-rgb), 0.5);
 }
 
 .form-control:focus {
