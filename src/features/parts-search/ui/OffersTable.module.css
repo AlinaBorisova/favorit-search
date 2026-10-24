@@ -1,0 +1,7 @@
+.offers > :is(thead, tbody) > tr > :first-child {
+  padding-left: 1rem;
+}
+
+.offers > :is(thead, tbody) > tr > :last-child {
+  padding-right: 1rem;
+}
