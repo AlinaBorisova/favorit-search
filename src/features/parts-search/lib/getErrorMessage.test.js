@@ -9,7 +9,7 @@ describe("getErrorMessage", () => {
   it("переводит известную ошибку API на русский", () => {
     const error = { status: "API_ERROR", message: "Request quota exceeded!" };
     expect(getErrorMessage(error)).toBe(
-      "Превышен лимит запросов. Попробуйте позже.",
+      "Превышен лимит запросов для этого ключа доступа (для грузовых запчастей он ограничен).",
     );
   });
 
