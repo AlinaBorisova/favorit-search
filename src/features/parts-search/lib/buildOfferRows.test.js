@@ -54,7 +54,12 @@ describe("buildOfferRows", () => {
 
   it("если складов нет, возвращает одну строку «нет в наличии» без цены", () => {
     const [row] = buildOfferRows([good({ warehouses: [] })]);
-    expect(row).toMatchObject({ inStock: false, price: null, stock: 0 });
+    expect(row).toMatchObject({
+      inStock: false,
+      price: null,
+      stock: 0,
+      shipmentDate: null,
+    });
   });
 
   it("если у всех складов нулевой остаток, тоже возвращает строку «нет в наличии»", () => {
