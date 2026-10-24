@@ -1,5 +1,4 @@
-import { SearchForm, BrandList } from "@/features/parts-search";
-import { OffersSection } from "@/features/parts-search";
+import { SearchForm, BrandList, OffersSection } from "@/features/parts-search";
 
 function App() {
   return (
